@@ -80,9 +80,9 @@ def coffeeMachine():
         return False
     else:
         enoughResources = checkResources(order)
-        if enoughResources == True:
+        if enoughResources:
             money = countMoney(order)
-            if money == True:
+            if money:
                 makeCoffee(order)
                 print(f"Here's your {order}! Enjoy!")
             else:
